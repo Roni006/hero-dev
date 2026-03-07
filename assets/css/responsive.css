@@ -1,0 +1,16 @@
+/* !header SECTION START   */
+@media (max-width: 800px) {
+  .menus {
+    display: none;
+  }
+  .menu-buttom {
+    display: block;
+    visibility: visible;
+  }
+}
+@media (max-width: 375px) {
+  .header-section .left .logo img {
+    max-width: 200  px;
+  }
+}
+/* !header SECTION END  */

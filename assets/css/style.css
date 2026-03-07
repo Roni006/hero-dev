@@ -1,0 +1,237 @@
+/*?short Detailes
+Author Name: Anik Islam
+version: 1.0
+Template: Hero Developer Portfolio Template
+*/
+.hidden {
+  display: none;
+}
+/* Todo: Essential CSS Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Todo: Root Variables */
+:root {
+  --global-font: "Plus Jakarta Sans", sans-serif;
+  --white-clor: #fff;
+  --black-color: #000;
+  --menu-hover: #872bff;
+  --box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  --paragraph-color: #8a8a8a;
+  --skill-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --gbl-bg: #fffefa;
+  --skill-btn-color: #0d1321;
+  --skill-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+body {
+  font-family: var(--global-font);
+  background-color: var(--gbl-bg);
+}
+
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 44px;
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1290px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/* Todo: Essential CSS Variables */
+
+/* ! HEADER SECTION START   */
+.header-section .left .logo img {
+  max-width: 250px;
+}
+.header-section .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--white-clor);
+  z-index: 999;
+  position: relative;
+}
+.header-section .right .menus ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  gap: 5px;
+}
+.header-section .right .menus li a {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 5px 15px;
+}
+.header-section .right .menus li a:hover {
+  color: var(--white-clor);
+  background-color: var(--menu-hover);
+  border-radius: 5px;
+}
+.menu-buttom {
+  background-color: var(--menu-hover);
+  color: var(--white-clor);
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline;
+  font-size: 20px;
+  display: none;
+  visibility: hidden;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* ! HEADER SECTION END  */
+
+/*!HERO SECTION START   */
+.hero-section {
+  margin-top: -100px;
+  padding: 150px 0 0 0;
+  background-image: url("../img/Hero-bg.png");
+  background-position: center;
+  z-index: -1;
+}
+.hero-section .row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.hero-section .left {
+  max-width: 719px;
+}
+.hero-section .left h1 .crafting {
+  color: var(--menu-hover);
+  font-weight: bold;
+}
+.hero-section .left p {
+  font-weight: medium;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: var(--paragraph-color);
+  padding: 36px 0;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.glb-btn {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--white-clor);
+  background-color: var(--menu-hover);
+  padding: 16px 32px;
+  border-radius: 30px;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--menu-hover);
+  transition: all linear 0.2s;
+}
+.glb-btn:hover {
+  color: var(--menu-hover);
+  background-color: transparent;
+}
+.glb-btn-outline {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--menu-hover);
+  border: 1px solid var(--menu-hover);
+  padding: 16px 32px;
+  border-radius: 30px;
+  box-shadow: var(--box-shadow);
+  transition: all linear 0.2s;
+}
+.glb-btn-outline:hover {
+  background-color: var(--menu-hover);
+  color: var(--white-clor);
+}
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/*!HERO SECTION END  */
+
+/*!SKILL SECTION START   */
+.skill-section {
+  padding: 150px 0;
+}
+.skill-section .upper-content h4 {
+  color: var(--menu-hover);
+  font-weight: bold;
+  letter-spacing: 30%;
+  margin-bottom: 15px;
+}
+.skill-section .upper-content h2 {
+  color: var(--black-color);
+  font-weight: bold;
+}
+.upper-content {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.skills {
+  width: 365px;
+  border-radius: 16px;
+  box-shadow: var(--skill-shadow);
+  padding: 40px 40px;
+  text-align: center;
+  display: flex;
+  transition: all linear 0.2s;
+  cursor: pointer;
+}
+.skills:hover {
+  box-shadow: var(--skill-box-shadow);
+  transform: scale(1.1);
+}
+.skills .skill-block img {
+  padding-bottom: 25px;
+}
+.skills .skill-block p {
+  padding: 8px 0 25px 0;
+}
+.skills .skill-block a {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--skill-btn-color);
+  text-decoration: underline;
+}
+/*!SKILL SECTION END  */
+
+/*! SECTION START   */
+/*! SECTION END  */
