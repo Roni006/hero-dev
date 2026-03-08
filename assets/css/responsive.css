@@ -10,7 +10,143 @@
 }
 @media (max-width: 375px) {
   .header-section .left .logo img {
-    max-width: 200  px;
+    max-width: 200px;
+  }
+}
+@media(max-width: 520px){
+  .header-section .left .logo img{
+    display: none;
+  }
+  .header-section .left .logo .icon img {
+    display: block;
   }
 }
 /* !header SECTION END  */
+
+/* !HERO SECTION END  */
+@media (max-width: 1150px) {
+  .hero-section .left h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 960px) {
+  .hero-section .left h1 {
+    font-size: 40px;
+  }
+  .hero-section .right img {
+    width: 400px;
+  }
+}
+@media (max-width: 830px) {
+  .hero-section .left h1 {
+    font-size: 30px;
+  }
+  .hero-section .left p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 675px) {
+  .hero-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+  .hero-section .right img {
+    display: none;
+  }
+  .hero-section .left h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 475px) {
+  .hero-section .left h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 375px) {
+  .glb-btn,
+  .glb-btn-outline {
+    padding: 10px 15px;
+  }
+}
+/* !HERO SECTION END  */
+
+/* !SKILL SECTION END  */
+@media (max-width: 1150px) {
+  .skill-section {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 675px) {
+  .upper-content h2 {
+    font-size: 30px;
+  }
+  .upper-content h4 {
+    font-size: 20px;
+  }
+  .skill-section {
+    padding: 60px 0;
+  }
+  .upper-content h2 {
+    font-size: 28px;
+  }
+  .upper-content {
+    margin-bottom: 40px;
+  }
+}
+/* !SKILL SECTION END  */
+
+/* !PROJECT SECTION END  */
+/* @media (max-width: 1150px) {
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 20px 40px 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .reverse {
+    flex-direction: none;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .project-section .projects .details p {
+    width: 400px;
+    text-align: justify;
+  }
+  .projects {
+    display: flex !important;
+    max-width: 450px;
+    flex-direction: row;
+    gap: 40px !important;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 475px) {
+  .project-section .projects .portfolio img {
+    max-width: 300px;
+  }
+  .projects {
+    display: flex !important;
+    max-width: 20px;
+    flex-direction: row;
+    gap: 40px !important;
+    align-items: center;
+    justify-content: center;
+  }
+} */
+/* !PROJECT SECTION END  */
+
+/* !EXPERIENCE SECTION END  */
+@media(max-width: 475px){
+  .experience-section .brands .brand { 
+    padding: 15px 20px; 
+}
+.experience-section .brands { 
+    gap: 20px;
+}
+}
+/* !EXPERIENCE SECTION END  */

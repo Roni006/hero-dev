@@ -27,6 +27,7 @@ Template: Hero Developer Portfolio Template
   --gbl-bg: #fffefa;
   --skill-btn-color: #0d1321;
   --skill-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --prooject-details-color: rgba(14, 13, 13, 0.7);
 }
 
 body {
@@ -60,9 +61,28 @@ h6 {
 }
 /* Todo: Essential CSS Variables */
 
+/*! ========================== */
+
+html {
+  scroll-behavior: smooth;
+} 
+/*! ========================== */
+
+
 /* ! HEADER SECTION START   */
+.header-section{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
 .header-section .left .logo img {
   max-width: 250px;
+}
+.header-section .left .logo .icon img {
+  max-width: 35px;
+  display: none;
 }
 .header-section .row {
   display: flex;
@@ -72,7 +92,8 @@ h6 {
   box-shadow: var(--box-shadow);
   background-color: var(--white-clor);
   z-index: 999;
-  position: relative;
+  position: relative,fixed;
+  
 }
 .header-section .right .menus ul {
   display: flex;
@@ -125,7 +146,7 @@ h6 {
   align-items: center;
   gap: 30px;
 }
-.hero-section .left {
+.hero-section .left h1 {
   max-width: 719px;
 }
 .hero-section .left h1 .crafting {
@@ -184,13 +205,13 @@ h6 {
 .skill-section {
   padding: 150px 0;
 }
-.skill-section .upper-content h4 {
+.upper-content h4 {
   color: var(--menu-hover);
   font-weight: bold;
   letter-spacing: 30%;
   margin-bottom: 15px;
 }
-.skill-section .upper-content h2 {
+.upper-content h2 {
   color: var(--black-color);
   font-weight: bold;
 }
@@ -233,5 +254,78 @@ h6 {
 }
 /*!SKILL SECTION END  */
 
-/*! SECTION START   */
-/*! SECTION END  */
+/*!PROJECTS SECTION START   */
+.project-section {
+  padding-bottom: 150px;
+}
+.project-section .projects .details h3 {
+  font-weight: bold;
+  color: var(--skill-btn-color);
+  padding-bottom: 12px;
+}
+.project-section .projects {
+  width: 1260px; 
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.portfolio {
+  border-radius: 20px;
+  border: 1px solid var(--menu-hover);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 48px 48px;
+  max-width: 1260px;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-section .projects .portfolio img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+.project-section .projects .details span {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: var(--prooject-details-color);
+}
+.project-section .projects .details p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: var(--prooject-details-color);
+  margin: 12px 0 32px 0;
+  width: 732px;
+}
+
+/*!PROJECTS SECTION END  */
+
+/*!EXPERIENCE SECTION START   */
+.experience-section { 
+ padding: 0 0 150px 0 !important;
+}
+.experience-section .brands {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.experience-section .brands .brand {
+  box-shadow: var(--box-shadow);
+  display: inline-block;
+  padding: 40px 40px;
+  text-align: center;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all linear 0.2s;
+
+}
+.experience-section .brands .brand:hover {
+ box-shadow:var(--skill-box-shadow);
+  transform: scale(1.1);
+}
+/*!EXPERIENCE SECTION END  */
