@@ -1,12 +1,14 @@
 /*?short Detailes
 Author Name: Anik Islam
 version: 1.0
-Template: Hero Developer Portfolio Template
-*/
-.hidden {
-  display: none;
-}
+/* !Template: Hero Developer Portfolio Template From Programming Hero */
+/*?short Detailes
+ 
 /* Todo: Essential CSS Variables */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -59,14 +61,8 @@ h6 {
   padding: 0 15px;
   margin: 0 auto;
 }
-/* Todo: Essential CSS Variables */
+/* Todo: Essential CSS Variables */ 
 
-/*! ========================== */
-
-html {
-  scroll-behavior: smooth;
-}
-/*! ========================== */
 
 /* ! HEADER SECTION START   */
 .header-section {
@@ -257,9 +253,7 @@ html {
 .project-section {
   padding-bottom: 150px;
 }
-.project-section .content {
-  /* border: 1px solid var(--menu-hover); */
-  /* padding: 48px 40px; */
+.project-section .content { 
   border-radius: 20px;
 
   width: 1260px;
@@ -288,8 +282,7 @@ html {
 }
 .content .card {
   display: flex;
-  align-items: center;
-  /* justify-content: space-between; */
+  align-items: center; 
   gap: 30px;
   border: 1px solid var(--menu-hover);
   padding: 48px 40px;
