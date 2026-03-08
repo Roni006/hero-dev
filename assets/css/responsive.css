@@ -13,8 +13,8 @@
     max-width: 200px;
   }
 }
-@media(max-width: 520px){
-  .header-section .left .logo img{
+@media (max-width: 520px) {
+  .header-section .left .logo img {
     display: none;
   }
   .header-section .left .logo .icon img {
@@ -99,54 +99,90 @@
 /* !SKILL SECTION END  */
 
 /* !PROJECT SECTION END  */
-/* @media (max-width: 1150px) {
-  .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px 20px 40px 20px;
-    align-items: center;
-    justify-content: center;
-  }
-  .reverse {
-    flex-direction: none;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .project-section .projects .details p {
-    width: 400px;
+@media (max-width: 1050px) {
+  .content .card .desc p {
+    width: 430px;
     text-align: justify;
   }
-  .projects {
-    display: flex !important;
-    max-width: 450px;
-    flex-direction: row;
-    gap: 40px !important;
-    align-items: center;
-    justify-content: center;
+  .project-section .content {
+    width: 950px;
   }
 }
-@media (max-width: 475px) {
-  .project-section .projects .portfolio img {
-    max-width: 300px;
-  }
-  .projects {
-    display: flex !important;
-    max-width: 20px;
-    flex-direction: row;
-    gap: 40px !important;
+@media (max-width: 960px) {
+  .content .card {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10px;
   }
-} */
+  .project-section .content {
+    border-radius: 20px;
+    width: 450px;
+    margin: 0 auto;
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 530px) {
+  .content .card .img img {
+    width: 350px; 
+    margin: 0 auto;
+  }
+   .project-section .content { 
+    width: 400px; 
+    padding: 20px 50px;
+    margin: 0 auto;
+  }
+   .content .card .desc p {
+    width: 350px;
+    text-align: justify;
+    margin: 0 auto;
+  }
+}
+@media(max-width:475px){
+   .content .card .img img {
+    width: 330px; 
+    margin: 0 auto;
+  }
+   .project-section .content { 
+    width: 380px;
+    margin: 0 auto;
+    padding: 20px 50px; 
+  }
+   .content .card .desc p {
+    width: 330px;
+    text-align: justify;
+    margin: 0 auto;
+  }
+  .content .card .desc h3 {
+    font-size: 28px;
+}
+}
+@media(max-width: 375px){
+ .project-section .content { 
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px 50px; 
+  }
+    .content .card .img img {
+    width: 320px; 
+    margin: 0 auto;
+  }
+     .content .card .desc p {
+    width: 300px;
+    text-align: justify;
+    margin: 0 auto;
+  }
+}
 /* !PROJECT SECTION END  */
 
 /* !EXPERIENCE SECTION END  */
-@media(max-width: 475px){
-  .experience-section .brands .brand { 
-    padding: 15px 20px; 
-}
-.experience-section .brands { 
+@media (max-width: 475px) {
+  .experience-section .brands .brand {
+    padding: 15px 20px;
+  }
+  .experience-section .brands {
     gap: 20px;
-}
+  }
 }
 /* !EXPERIENCE SECTION END  */
